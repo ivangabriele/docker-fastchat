@@ -9,7 +9,7 @@ Ubuntu image including:
 - Python 3
 - Rust
 - [FastChat][link-fastchat]
-- Vicuna-13B
+- Vicuna-7B
 
 This image is intented for people who want to run FastChat using on their own server or cloud instance.
 

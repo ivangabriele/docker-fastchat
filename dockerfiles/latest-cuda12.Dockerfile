@@ -31,12 +31,12 @@ RUN pip3 install --upgrade pip
 RUN pip3 install -e .
 
 # FastChat Model
-# https://github.com/lm-sys/FastChat#vicuna-13b
-RUN mkdir -p /app/models
+# https://github.com/lm-sys/FastChat#vicuna-7b
+RUN mkdir -p /app/models/output
 RUN python3 -m fastchat.model.apply_delta \
-    --base-model-path /app/models/llama-13b \
-    --target-model-path /app/models/output/vicuna-13b \
-    --delta-path lmsys/vicuna-13b-delta-v1.1
+    --base-model-path /app/models/llama-7b \
+    --target-model-path /app/models/output/vicuna-7b \
+    --delta-path lmsys/vicuna-7b-delta-v1.1
 
 # EXPOSE $PORT
 
