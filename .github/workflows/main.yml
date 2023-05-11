@@ -20,8 +20,8 @@ jobs:
         VERSION: ["latest"]
         VARIANT: ["cuda12"]
     env:
-      DOCKER_ARTIFACT_PATH: ./build/${{ matrix.VERSION }}${{ matrix.VARIANT }}.tar
-      DOCKER_IMAGE_TAG: ${{ matrix.VERSION }}${{ matrix.VARIANT }}
+      DOCKER_ARTIFACT_PATH: ./build/${{ matrix.VERSION }}-${{ matrix.VARIANT }}.tar
+      DOCKER_IMAGE_TAG: ${{ matrix.VERSION }}-${{ matrix.VARIANT }}
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -48,8 +48,8 @@ jobs:
         VERSION: ["15"]
         VARIANT: [""]
     env:
-      DOCKER_ARTIFACT_PATH: ./build/${{ matrix.VERSION }}${{ matrix.VARIANT }}.tar
-      DOCKER_IMAGE_TAG: ${{ matrix.VERSION }}${{ matrix.VARIANT }}
+      DOCKER_ARTIFACT_PATH: ./build/${{ matrix.VERSION }}-${{ matrix.VARIANT }}.tar
+      DOCKER_IMAGE_TAG: ${{ matrix.VERSION }}-${{ matrix.VARIANT }}
     steps:
       - name: Checkout
         uses: actions/checkout@v3
