@@ -9,7 +9,7 @@ Ubuntu image including:
 - Python 3
 - Rust
 - [FastChat][link-fastchat]
-- Vicuna-13B (which weights 13B)
+- Vicuna-13B
 
 This image is intented for people who want to run FastChat using on their own server or cloud instance.
 
@@ -35,7 +35,7 @@ This image is intented for people who want to run FastChat using on their own se
 - **⚠️ The web application is NOT secured.** It's up to you to secure your public HTTP port connection.
 - You need a GPU server or instance. The default entrypoint uses a single GPU run but you can override it
   using `docker run --entrypoint ...` or a Docker Compose file via `entrypoint: [...]`.
-- This image is big since it includes a 13B data model.
+- This image is **BIG** since it includes a 9GB data model.
 
 
 ## Supported tags and respective `Dockerfile` links
